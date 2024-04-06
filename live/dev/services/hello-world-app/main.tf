@@ -27,7 +27,7 @@ provider "aws" {
 
 module "hello_world_app" {
 
-  source = "../../../../modules/services/hello-world-app"
+  source = "git::https://github.com/EmrhT/terraform-child-modules.git//services/hello-world-app?ref=v1.0.0"
 
   server_text = var.server_text
 

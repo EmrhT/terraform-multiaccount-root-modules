@@ -25,7 +25,7 @@ provider "aws" {
 }
 
 module "mysql" {
-  source = "../../../../modules/data-stores/mysql"
+  source = "git::https://github.com/EmrhT/terraform-child-modules.git//data-stores/mysql?ref=v1.0.0"
 
   db_name     = var.db_name
   db_username = var.db_username
