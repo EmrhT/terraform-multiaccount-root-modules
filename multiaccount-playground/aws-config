@@ -1,0 +1,12 @@
+[default]
+region = eu-west-1
+
+[profile dev-admin]
+role_arn = arn:aws:iam::444469924026:role/admin-access-for-assumption-dev
+source_profile = default
+region = eu-west-1
+
+[profile stage-admin]
+role_arn = arn:aws:iam::813271427490:role/admin-access-for-assumption-stage
+source_profile = default
+region = eu-west-1
